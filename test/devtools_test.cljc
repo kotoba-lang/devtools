@@ -6,7 +6,7 @@
 
 (deftest namespace-loads
   (testing "the restored CLJC namespace loads"
-    (is (some? (the-ns 'devtools)))))
+    (is (some? (find-ns 'devtools)))))
 
 (defn- sample-scene []
   (devtools/scene-snapshot
