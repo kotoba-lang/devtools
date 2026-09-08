@@ -4,7 +4,7 @@
   draw-ops, console/messages, audit events, navigation) — no engine
   dependency, so these run standalone on the JVM."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [devtools.inspect :as inspect]))
 
 ;; ----------------------------------------------- -- fixtures (plain data)

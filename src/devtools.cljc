@@ -17,7 +17,7 @@
   dependency).
 
   Zero-dep portable CLJC — pure data + pure functions, no IO/GPU."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def semantic-roles #{:button :panel :meter :text :canvas :node :list-item :input :toggle :unknown})
 
