@@ -44,7 +44,7 @@
   unifies the engine's scattered debug state (document snapshot, audit log,
   console/messages, draw-ops) into a single readable DevTools view. A CDP /
   HTTP transport lives at L2."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ---------------------------------------------------------------- -- helpers
 
@@ -266,7 +266,7 @@
       "  (no network requests)"
       (str/join "\n"
                 (map (fn [{:keys [url method status ok? error kind]}]
-                       (str "  " (str/upper-case (name method))
+                       (str "  " (str/upper (name method))
                             " " (or url "(no url)")
                             (when status (str " " status))
                             (if (false? ok?) " FAIL" "")
