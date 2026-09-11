@@ -18,7 +18,7 @@ to match `kotoba-lang/input`'s documented shapes.
 ## Status
 
 Restored — ported from the original 553-line Rust `lib.rs`, with all 4
-original Rust unit tests mirrored 1:1 in `test/devtools_test.cljc` (+1
+original Rust unit tests mirrored 1:1 in `test/devtools_test.cljk` (+1
 smoke test) — 5 tests / 13 assertions, 0 failures. Pure data + pure
 functions throughout; no IO/GPU.
 
